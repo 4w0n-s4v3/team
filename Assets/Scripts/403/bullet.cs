@@ -5,7 +5,6 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public float speed = 1000f;
-    public GameObject mainCamera;
     private float lifetime = 5f;
     private float spawnTime;
     // Start is called before the first frame update
@@ -19,7 +18,7 @@ public class bullet : MonoBehaviour
     {
         transform.Translate(Vector2.up * speed * Time.deltaTime);
         if (Time.time - spawnTime > lifetime) {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
     

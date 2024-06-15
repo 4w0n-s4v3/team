@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class shot : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class shot : MonoBehaviour
     public GameObject bulletPrefab;
     public float shotSpeed = 10.0f;
     public Transform sPoint;
+
+    public Transform playerPos;
+
     private void Start()
     {
         target = transform.position;
@@ -28,5 +32,7 @@ public class shot : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
             GameObject bullet = Instantiate(bulletPrefab, sPoint.position, Quaternion.AngleAxis(angle - 90,Vector3.forward));
         }
+
+        transform.position = new Vector3(playerPos.position.x + 0.1f, playerPos.position.y + 0.3f, playerPos.position.z);
     }
 }

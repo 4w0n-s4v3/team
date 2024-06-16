@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2126443600538042474}
   - component: {fileID: 538436079681095066}
   m_Layer: 0
-  m_Name: fuckingmob1
+  m_Name: testmob1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

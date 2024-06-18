@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: "\uB4E4\uD310 \uACE0\uC0AC\uB9AC"
   ingredientTag: 0
-  ingredientImage: {fileID: -679001404, guid: 80a8d6af18ed61845b98cbb498314613, type: 3}
+  ingredientImage: {fileID: 21300000, guid: 36bffa1faedb6426b9e981306abc98d0, type: 3}
   ingredientPrefab: {fileID: 3692003303249747184, guid: 995ae7cefb851b040aaae440b8bd5b97, type: 3}
   ingredientDescription: 
-  ingredientFlavor: 
+  ingredientFlavor: "\uC774\uAC70 \uBC1C\uC554\uBB3C\uC9C8\uC774\uB77C\uB358\uB370"

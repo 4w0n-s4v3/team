@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2120828780405152343}
   - component: {fileID: 6023639957957370047}
   - component: {fileID: 7275540234250726496}
-  - component: {fileID: 4197144803466325782}
+  - component: {fileID: 6769099994203484}
   m_Layer: 0
   m_Name: forest08
   m_TagString: PotionIngredient
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionIngredient: {fileID: 11400000, guid: 55dd31281d34b5c4eb713f8242682031, type: 2}
   spriteRenderer: {fileID: 6023639957957370047}
---- !u!70 &4197144803466325782
-CapsuleCollider2D:
+--- !u!60 &6769099994203484
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,6 +132,21 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011806607, y: -0.020661712}
-  m_Size: {x: 0.61806655, y: 0.69892955}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6666667, y: 0.6666667}
+    newSize: {x: 0.6666667, y: 0.6666667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.33333334, y: 0.33333334}
+      - {x: -0.33333334, y: -0.20833334}
+      - {x: -0.083333336, y: -0.33333334}
+      - {x: 0.33333334, y: -0.33333334}
+      - {x: 0.33333334, y: 0.33333334}
+  m_UseDelaunayMesh: 0

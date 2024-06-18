@@ -1,0 +1,1962 @@
+fileFormatVersion: 2
+guid: 4f37d7dcf37084c27a1125ae78a60a95
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: farm objects free_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf34cf517eb0d4ceb9bc0cb64fd6d650
+      internalID: 683613811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349ac305f1c56466db7de6fdb6e48056
+      internalID: 1011616266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81986161957b545fca8cc7ac479f6e2a
+      internalID: 638758713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf8d21aa10c64121ada8275b14deb8a
+      internalID: -1910813541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbd56e6b42e340f5babb029e92ec9ec
+      internalID: -972338140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbcc785f8f734ac39bc7f2e02e36445
+      internalID: -1025231932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f95b06265f24455a9c990cc422735e0
+      internalID: -702893234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb205cfcec27a42229e4e912499ef6fb
+      internalID: 381981019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 175
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1565651a0fe5748b0a9866e7f7ddb0e8
+      internalID: -754626454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b377a59d77d454d51ab1d61fcf02c1ab
+      internalID: 1313077065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd5058c247044ac58d142a5c216a781
+      internalID: 1382403003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bf6adb862d14d668803c5a4d188515
+      internalID: 462085143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faae2a4fc22ed44139769c41408684b9
+      internalID: 57466580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c5800c2319947aab756313dd3657be
+      internalID: -1502168543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082d74e23175e4338842dc7620f2d9c5
+      internalID: -858007055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623ca1b604776494db7dc83cd7e80097
+      internalID: 1329282962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62dff9d4e19a4dd28619013c5830c13
+      internalID: 1200857077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9f577a100974d578cac7ff96d3f5c6
+      internalID: 642498807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bf428f32a2846af8119187de1407a2
+      internalID: 1903908386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c34e74920674ac8bfbe27b62be7b4e
+      internalID: -1298579059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d5e2dc15a6a47118bcf45abe791a8e
+      internalID: 1384853121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff801ea358794d1b9475e2397701161
+      internalID: -147514152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d4de75afa74448fbd3a4357ad2cd07
+      internalID: 802624063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43150eec5ad8476f987b462bab805d3
+      internalID: 837732477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7ee92245e9047f6821ba7695ece8fe
+      internalID: -892870020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe6ee1f0e0db4d98a0f5a5c98187117
+      internalID: -440844774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 143
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf7c254619b74e939da00058c23d8fe
+      internalID: -1306482779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe709cae08674b04b9673644f2906ff
+      internalID: 980836093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c0e0b5acbe74d61837acdb90f788a4
+      internalID: -1422238216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e326e48c4314fcfa062748778ca814
+      internalID: 994182575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e8004ae2db147e9932126ae296b725
+      internalID: 1066935894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c71f72cf452434fbb748059351b66c
+      internalID: 1254273753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e182822de4336484ea51ef3e0afbaba9
+      internalID: 2137519726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d074dc1cd284a5988b0f503df7b277
+      internalID: 1506234659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9c7d5032ab04c77aa4761c5952d7c8
+      internalID: -2139810824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ecf6a41fc4444e4811f1e7de34aecf
+      internalID: -1212148134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48e3d130bf134d06b584bc312dc6d68
+      internalID: 356944237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6c5485ab028451b8d1818239bbe829
+      internalID: 1692307223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eec9c2c69dc480fa6fc9649f16dca9
+      internalID: -574899747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5465964532f416f9393fc1dee1850f
+      internalID: 1282808533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6931fa6a92fdc4471a11a5c9e5274d53
+      internalID: -76753860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62100fde040384234ae4d8d80f7630d3
+      internalID: 1393387834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_42
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcfa21d1f8d0408e804db2263a38790
+      internalID: 1971707566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0282069baf8bd4f44b206951fb5cd402
+      internalID: 1158269265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6ccb8563e2f43d4b426650ff8e554a
+      internalID: -101142705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa43cfe7c4080467f948cd52c3466523
+      internalID: -137479312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd0b00ab1b547c28fc99603ff448a1
+      internalID: 433433820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955f683edeae347d5bd56c6155198dfe
+      internalID: -631498868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a725672bbe438e94cc7c17cdfb619
+      internalID: 1228573065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dff29340b2ac41f989aa66c58dde92b
+      internalID: -1888062319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cd38b5c59e2457391c5d6d92ad607f
+      internalID: -1876847085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c42eac90a9a44208186501f7f9f52d
+      internalID: 823753657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8b52e3869c54763a2c6398d53ddcb0
+      internalID: 618513679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a026e51aa514d2186c0f38f175676b
+      internalID: 1932250175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32f35962c3a647dcbc359fee6906457
+      internalID: -971827799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3e97282757f48259f617cf7afdb63e
+      internalID: 1393099679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a05e527814f40518a1f5dd190c19b1
+      internalID: -877867823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c49bd30329b84893b4a6ea2f2e7020e
+      internalID: -1499839529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df07393ce90184db1b12a96da6d1c0d7
+      internalID: -616814776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_59
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f45a5773c7064e14b230c181f731f19
+      internalID: -1155547945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eaf94f5c6c9462fbb72ce3732754e1
+      internalID: 202669281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_61
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048075a71446348b18df69ef3ce694c9
+      internalID: 847722847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e59a951bd7b469db5742dbbc4f6aff
+      internalID: 1790458089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_63
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31f5c0ad4f054ac88743182ccac6bea
+      internalID: 1238437239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13f3c010e24f45b38b55185b8d9e1b5
+      internalID: -535835368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_65
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d7c1d60406b4f65888c21fac010e5a
+      internalID: 894937723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6674ad5df569476686de09268c432f8
+      internalID: 1862555219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_67
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7688c366b794b9eac24ea0641d36ff
+      internalID: 1586834568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_68
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd41f1590a00488e9b3e23f9dcbd0df
+      internalID: 838549295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_69
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 47
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62f7966473b042b489c676e5e75bafa
+      internalID: 2094790086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc9d3ee09a594a4eb5bbeb6a1aef206
+      internalID: -659270163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_71
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3831653e8e44d909c87433105133cc
+      internalID: -81252675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_72
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb6b76c64d39475a992886320812d28
+      internalID: -1795533340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_73
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6b623bffd0e4ca186606eb152c2984
+      internalID: 1284683223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb001d0de99446fbac6b33f04f3fc2c
+      internalID: -1640201683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_75
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b05e3a84a6a4f4d8b910d36a5365df
+      internalID: 1307528639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac570e2672ee4d108c4a2fbec7cff54
+      internalID: 1744186845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_77
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 31
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e54bfcc8fdd24ca4afc8e782c7c0547
+      internalID: -1337533468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_78
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f07b6d345d0e4cbebbbc6244483b189
+      internalID: 692199425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_79
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eed5d2889b774c1d89e3a367a152b79
+      internalID: -1163251021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_80
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85845eee5413945ad8d0f35e90a0fc9c
+      internalID: 247318285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc040ae11fa9041fe8a8f8f302b36713
+      internalID: 231760084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_82
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d2c89dd19dd408483d45450598bc96
+      internalID: 1284421519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farm objects free_83
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da61f28f22704c058ce6dc67c9829fc
+      internalID: 239860100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      farm objects free_0: 683613811
+      farm objects free_1: 1011616266
+      farm objects free_10: 1382403003
+      farm objects free_11: 462085143
+      farm objects free_12: 57466580
+      farm objects free_13: -1502168543
+      farm objects free_14: -858007055
+      farm objects free_15: 1329282962
+      farm objects free_16: 1200857077
+      farm objects free_17: 642498807
+      farm objects free_18: 1903908386
+      farm objects free_19: -1298579059
+      farm objects free_2: 638758713
+      farm objects free_20: 1384853121
+      farm objects free_21: -147514152
+      farm objects free_22: 802624063
+      farm objects free_23: 837732477
+      farm objects free_24: -892870020
+      farm objects free_25: -440844774
+      farm objects free_26: -1306482779
+      farm objects free_27: 980836093
+      farm objects free_28: -1422238216
+      farm objects free_29: 994182575
+      farm objects free_3: -1910813541
+      farm objects free_30: 1066935894
+      farm objects free_31: 1254273753
+      farm objects free_32: 2137519726
+      farm objects free_33: 1506234659
+      farm objects free_34: -2139810824
+      farm objects free_35: -1212148134
+      farm objects free_36: 356944237
+      farm objects free_37: 1692307223
+      farm objects free_38: -574899747
+      farm objects free_39: 1282808533
+      farm objects free_4: -972338140
+      farm objects free_40: -76753860
+      farm objects free_41: 1393387834
+      farm objects free_42: 1971707566
+      farm objects free_43: 1158269265
+      farm objects free_44: -101142705
+      farm objects free_45: -137479312
+      farm objects free_46: 433433820
+      farm objects free_47: -631498868
+      farm objects free_48: 1228573065
+      farm objects free_49: -1888062319
+      farm objects free_5: -1025231932
+      farm objects free_50: -1876847085
+      farm objects free_51: 823753657
+      farm objects free_52: 618513679
+      farm objects free_53: 1932250175
+      farm objects free_54: -971827799
+      farm objects free_55: 1393099679
+      farm objects free_56: -877867823
+      farm objects free_57: -1499839529
+      farm objects free_58: -616814776
+      farm objects free_59: -1155547945
+      farm objects free_6: -702893234
+      farm objects free_60: 202669281
+      farm objects free_61: 847722847
+      farm objects free_62: 1790458089
+      farm objects free_63: 1238437239
+      farm objects free_64: -535835368
+      farm objects free_65: 894937723
+      farm objects free_66: 1862555219
+      farm objects free_67: 1586834568
+      farm objects free_68: 838549295
+      farm objects free_69: 2094790086
+      farm objects free_7: 381981019
+      farm objects free_70: -659270163
+      farm objects free_71: -81252675
+      farm objects free_72: -1795533340
+      farm objects free_73: 1284683223
+      farm objects free_74: -1640201683
+      farm objects free_75: 1307528639
+      farm objects free_76: 1744186845
+      farm objects free_77: -1337533468
+      farm objects free_78: 692199425
+      farm objects free_79: -1163251021
+      farm objects free_8: -754626454
+      farm objects free_80: 247318285
+      farm objects free_81: 231760084
+      farm objects free_82: 1284421519
+      farm objects free_83: 239860100
+      farm objects free_9: 1313077065
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class IngredientInteraction : MonoBehaviour
 {
@@ -34,20 +35,23 @@ public class IngredientInteraction : MonoBehaviour
                 playerDir = Vector3.left;
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir, 1.0f);
+        RaycastHit2D[] hit = Physics2D.RaycastAll(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir, 1.0f);
         Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir * 1.0f, Color.red);
-        if (hit)
+        for (int i = 1; i < hit.Length; i++)
         {
-            if (hit.collider.CompareTag("PotionIngredient"))
+            Debug.Log(hit[i].collider.name);
+
+            if (hit[i].collider.CompareTag("PotionIngredient"))
             {
                 if (Input.GetKey(KeyCode.E))
                 {
                     Debug.Log("Input E");
                     itemCount += 1;
-                    itemName = hit.collider.name;
+                    itemName = hit[i].collider.name;
                     Debug.Log(itemName + " " + itemCount);
-                    Destroy(hit.collider.gameObject);
+                    Destroy(hit[i].collider.gameObject);
                 }
+                break;
             }
         }
     }

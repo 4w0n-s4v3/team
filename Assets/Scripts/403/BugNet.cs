@@ -1,31 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class BugNet : MonoBehaviour
 {
 
-    
+    private Transform tr;
     public Transform playerPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tr = gameObject.transform;
+        tr.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        //마우스 거리로 부터 각도 계산
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        //축으로부터 방향과 각도의 회전값
-        Quaternion rotation = Quaternion.AngleAxis(angle , Vector3.forward);
-        transform.rotation = rotation;
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
+            gameObject.GetComponent<CircleCollider2D>().enabled = true;
+            Rotation();
         }
-        transform.position = new Vector3(playerPos.position.x + 0.1f, playerPos.position.y + 0.3f, playerPos.position.z);
+        if(Input.GetKeyUp(KeyCode.Mouse0)) {
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        }
+        transform.position = new Vector3(playerPos.position.x + 0.21f, playerPos.position.y + 0.22f, playerPos.position.z);
+    }
+
+    private void Rotation(){
+        float spd = 1.0f;
+        Quaternion from = Quaternion.Euler(new Vector3(0, 0, 0));
+        Quaternion to = Quaternion.Euler(new Vector3(0, 0, 140));
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, to, spd * Time.deltaTime);
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7275540234250726496}
   - component: {fileID: 4197144803466325782}
   m_Layer: 0
-  m_Name: cave01
+  m_Name: forest04
   m_TagString: PotionIngredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -679001404, guid: 80a8d6af18ed61845b98cbb498314613, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e1b03799936c49e383e4537a00661df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6666667, y: 0.6666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e14fd9bbaa4124dbd8d002a209e8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potionIngredient: {fileID: 11400000, guid: 4762d0eb5a7ceaa4c9eeccdb3d0e415b, type: 2}
+  potionIngredient: {fileID: 11400000, guid: 260ea36dd20b80c4286d9595633890de, type: 2}
   spriteRenderer: {fileID: 6023639957957370047}
 --- !u!70 &4197144803466325782
 CapsuleCollider2D:
@@ -132,6 +132,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
+  m_Offset: {x: 0.07479411, y: -0.014959097}
+  m_Size: {x: 0.5099722, y: 0.730741}
   m_Direction: 0

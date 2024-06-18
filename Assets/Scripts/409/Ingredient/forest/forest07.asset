@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 821ed6afdb09bf646a0b691463f5dc44, type: 3}
-  m_Name: forest05
+  m_Name: forest07
   m_EditorClassIdentifier: 
-  ingredientName: "\uC7BF\uBE5B\uB098\uBB34 \uC5F4\uB9E4"
+  ingredientName: "\uC18C\uB098\uBB34 \uC194\uBC14\uB298"
   ingredientTag: 0
-  ingredientImage: {fileID: 0}
-  ingredientPrefab: {fileID: 0}
+  ingredientImage: {fileID: 21300000, guid: cbf960352d508454cbe5692d2adf052f, type: 3}
+  ingredientPrefab: {fileID: 3692003303249747184, guid: 8da94a77fadeec745b2733bbf476ff6a, type: 3}
   ingredientDescription: 
   ingredientFlavor: 

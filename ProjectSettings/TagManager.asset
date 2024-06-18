@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - bullet
+  - PotionIngredient
   layers:
   - Default
   - TransparentFX

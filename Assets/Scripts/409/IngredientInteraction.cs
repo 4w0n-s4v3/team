@@ -7,12 +7,35 @@ public class IngredientInteraction : MonoBehaviour
     public int itemCount = 0;
     public string itemName = "";
 
+    float hInput;
+    float vInput;
+    bool isHorizontalMove;
+    Vector3 playerDir;
+
     void Update()
     {
+        hInput = Input.GetAxisRaw("Horizontal");
+        vInput = Input.GetAxisRaw("Vertical");
 
-        
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.forward, 50f);
-        Debug.DrawRay(transform.position, transform.forward * 50f, Color.red);
+        if (hInput == 0 && vInput != 0)
+        {
+            isHorizontalMove = false;
+            if (vInput == 1)
+                playerDir = Vector3.up;
+            else if (vInput == -1)
+                playerDir = Vector3.down;
+        }
+        else
+        {
+            isHorizontalMove = true;
+            if (hInput == 1)
+                playerDir = Vector3.right;
+            else if (hInput == -1)
+                playerDir = Vector3.left;
+        }
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDir, 1.0f);
+        Debug.DrawRay(transform.position, playerDir * 1.0f, Color.red);
         if (hit)
         {
             if (hit.collider.CompareTag("PotionIngredient"))

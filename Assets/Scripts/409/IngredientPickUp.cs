@@ -9,7 +9,8 @@ public class IngredientPickUp : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
 #if UNITY_EDITOR
-    public void OnValidate() {
+    public void OnValidate()
+    {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = potionIngredient.ingredientImage;
     }
@@ -17,6 +18,6 @@ public class IngredientPickUp : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 }

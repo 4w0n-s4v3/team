@@ -15,6 +15,6 @@ MonoBehaviour:
   ingredientName: "\uC5B4\uB460\uBC84\uC12F"
   ingredientTag: 0
   ingredientImage: {fileID: 21300000, guid: 00a9778e31a0740fb99facc46ecd0a0a, type: 3}
-  ingredientPrefab: {fileID: 0}
+  ingredientPrefab: {fileID: 6421397368382587090, guid: 3187f6d221e5a174aaedb53b85923f36, type: 3}
   ingredientDescription: 
   ingredientFlavor: 

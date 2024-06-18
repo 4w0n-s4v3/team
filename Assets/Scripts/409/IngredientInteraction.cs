@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class IngredientInteraction : MonoBehaviour
 {
-    Rigidbody2D rigid;
     public int itemCount = 0;
     public string itemName = "";
 
@@ -12,11 +11,6 @@ public class IngredientInteraction : MonoBehaviour
     float vInput;
     bool isHorizontalMove;
     Vector3 playerDir;
-
-    void Start()
-    {
-        rigid = GetComponent<Rigidbody2D>();
-    }
 
     void Update()
     {
@@ -40,8 +34,8 @@ public class IngredientInteraction : MonoBehaviour
                 playerDir = Vector3.left;
         }
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDir, 0.8f);
-        Debug.DrawRay(transform.position, playerDir * 0.8f, Color.red);
+        RaycastHit2D hit = Physics2D.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir, 1.0f);
+        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir * 1.0f, Color.red);
         if (hit)
         {
             if (hit.collider.CompareTag("PotionIngredient"))

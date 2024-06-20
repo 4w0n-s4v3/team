@@ -38,21 +38,25 @@ public class GridManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Vector3Int mousePos = GetMousePosition();
-            if (!mousePos.Equals(previousMousePos)) {
-                interectiveMap.SetTile(previousMousePos, null); // Remove old hoverTile
-                interectiveMap.SetTile(mousePos, hoverTile);
-                previousMousePos = mousePos;
-            }
+            if (mousePos.x < -10 && mousePos.x >= -19 && mousePos.y >= -4 && mousePos.y < 12)
+            {
+                if (!mousePos.Equals(previousMousePos)) {
+                    interectiveMap.SetTile(previousMousePos, null); // Remove old hoverTile
+                    interectiveMap.SetTile(mousePos, hoverTile);
+                    previousMousePos = mousePos;
+                }
 
-            // Left mouse click -> add path tile
-            if (Input.GetMouseButton(0)) {
-                pathMap.SetTile(mousePos, pathTile);
-            }
+                // Left mouse click -> add path tile
+                if (Input.GetMouseButton(0)) {
+                    pathMap.SetTile(mousePos, pathTile);
+                }
 
-            // Right mouse click -> remove path tile
-            if (Input.GetMouseButton(1)) {
-                pathMap.SetTile(mousePos, null);
+                // Right mouse click -> remove path tile
+                if (Input.GetMouseButton(1)) {
+                    pathMap.SetTile(mousePos, null);
+                }
             }
+            else interectiveMap.SetTile(previousMousePos, null);
         }
     }
 

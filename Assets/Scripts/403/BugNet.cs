@@ -10,6 +10,9 @@ public class BugNet : MonoBehaviour
 
     private Transform tr;
     public Transform playerPos;
+    public GameObject player;
+    Quaternion from = Quaternion.Euler(new Vector3(0, 0, 0));
+    Quaternion to = Quaternion.Euler(new Vector3(0, 0, 140));
 
     // Start is called before the first frame update
     void Start()
@@ -23,18 +26,33 @@ public class BugNet : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
             gameObject.GetComponent<CircleCollider2D>().enabled = true;
-            Rotation();
+        }
+        if(Input.GetKey(KeyCode.Mouse0)) {
+            transform.rotation = to;
         }
         if(Input.GetKeyUp(KeyCode.Mouse0)) {
             gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            transform.rotation = from;
         }
         transform.position = new Vector3(playerPos.position.x + 0.21f, playerPos.position.y + 0.22f, playerPos.position.z);
-    }
+        
+        // for (int i = 1; i < hit.Length; i++)
+        // {
+        //     Debug.Log(hit[i].collider.name);
 
-    private void Rotation(){
-        float spd = 1.0f;
-        Quaternion from = Quaternion.Euler(new Vector3(0, 0, 0));
-        Quaternion to = Quaternion.Euler(new Vector3(0, 0, 140));
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, to, spd * Time.deltaTime);
+        //     if (hit[i].collider.CompareTag("PotionIngredient"))
+        //     {
+                
+        //         Debug.Log("Input E");
+        //         itemCount += 1;
+        //         itemName = hit[i].collider.name;
+        //         Debug.Log(itemName + " " + itemCount);
+        //         Destroy(hit[i].collider.gameObject);
+                
+        //         break;
+        //     }
+        // }
+
+
     }
 }

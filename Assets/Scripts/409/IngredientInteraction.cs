@@ -34,25 +34,15 @@ public class IngredientInteraction : MonoBehaviour
             else if (hInput == -1)
                 playerDir = Vector3.left;
         }
+    }
 
-        RaycastHit2D[] hit = Physics2D.RaycastAll(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir, 1.0f);
-        Debug.DrawRay(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), playerDir * 1.0f, Color.red);
-        for (int i = 1; i < hit.Length; i++)
-        {
-            Debug.Log(hit[i].collider.name);
-
-            if (hit[i].collider.CompareTag("PotionIngredient"))
-            {
-                if (Input.GetKey(KeyCode.E))
-                {
-                    Debug.Log("Input E");
-                    itemCount += 1;
-                    itemName = hit[i].collider.name;
-                    Debug.Log(itemName + " " + itemCount);
-                    Destroy(hit[i].collider.gameObject);
-                }
-                break;
-            }
+    private void OnTriggerEnter2D(Collider2D collision) {
+        // Debug.Log(this.name);
+        if (collision.gameObject.CompareTag("PotionIngredient")) {
+                itemCount += 1;
+                itemName = collision.name;
+                Debug.Log(itemName + " " + itemCount);
+                Destroy(collision.gameObject);
         }
     }
 }

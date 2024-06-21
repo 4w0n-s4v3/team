@@ -8,7 +8,7 @@ public class UIControl : MonoBehaviour
     public RectTransform inventory;
 
     bool isMove = true;
-    bool isInv = false;
+    public bool isInv = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,14 @@ public class UIControl : MonoBehaviour
 
     IEnumerator MoveFromTo()
     {
+        if (!isInv)
+        {
+            inventory.gameObject.SetActive(true);
+
+            Time.timeScale = 0;
+        }
+        else Time.timeScale = 1;
+
         isMove = false;
 
         float t = 0f;
@@ -41,10 +49,12 @@ public class UIControl : MonoBehaviour
 
         while (t < 1f)
         {
-            t += 1f * Time.deltaTime;
+            t += 1f * Time.unscaledDeltaTime;
             inventory.localPosition = Vector3.Lerp(inventory.localPosition, movePosition, t);
             yield return null;
         }
+        if (isInv) inventory.gameObject.SetActive(false);
+
         isInv = !isInv;
         isMove = true;
     }

@@ -9,6 +9,9 @@ public class Inventory : MonoBehaviour
 {
     public enum Set { Select, Deselect, Buy }
 
+    [Header("# UI Controller")]
+    public UIControl uiControl;
+
     [Header("# Base Parameter")]
     public GameObject selectSlot;
     public List<IngredientPickUp> items;
@@ -18,11 +21,22 @@ public class Inventory : MonoBehaviour
 
     public int slotLength;
 
+    public ScrollRect scrollRect;
+    public Transform upScroll;
+    public Transform downScroll;
+
     [Header("# Slots")]
     public Transform slotParent;
 
-    [HideInInspector] public Slot[] slots;
-    [HideInInspector] public int currentSlot = 0;
+    public Slot[] slots;
+    public int currentSlot = 0;
+
+#if UNITY_EDITOR
+    public void OnValidate()
+    {
+        slots = slotParent.GetComponentsInChildren<Slot>();
+    }
+#endif
 
     virtual public void Awake()
     {
@@ -75,6 +89,10 @@ public class Inventory : MonoBehaviour
 
     virtual public void SelectItem()
     {
+        if (slots[currentSlot].transform.position.y > upScroll.position.y)
+            scrollRect.verticalScrollbar.value += 0.5f;
+        else if (slots[currentSlot].transform.position.y < downScroll.position.y)
+            scrollRect.verticalScrollbar.value -= 0.5f;
         selectSlot.transform.position = slots[currentSlot].transform.position;
 
         TextPrint();
@@ -84,7 +102,7 @@ public class Inventory : MonoBehaviour
     {
         IngredientPickUp slotItem = slots[currentSlot].item;
 
-        itemName.text = slotItem.potionIngredient.ingredientName;
+//        itemName.text = slotItem.potionIngredient.ingredientName;
     }
 
     virtual public void FreshSlot(List<IngredientPickUp> items = null, Slot[] slots = null)

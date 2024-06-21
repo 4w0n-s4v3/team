@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -8,17 +9,52 @@ public class Player : MonoBehaviour
     float moveSpeed = 5.0f;
 
     Animator anim;
+    Canvas canv;
 
-    // Start is called before the first frame update
+    [SerializeField]
+    float playerHealth = 3.0f;
+
+    [SerializeField]
+    Image[] hpImage;
+
+    [SerializeField]
+    bool isMujuck = false;
+
+
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (playerHealth == 3.0f)
+        {
+            hpImage[2].enabled = true;
+            hpImage[1].enabled = true;
+            hpImage[0].enabled = true;
+        }
+        if (playerHealth == 2.0f)
+        {
+            hpImage[2].enabled = false;
+            hpImage[1].enabled = true;
+            hpImage[0].enabled = true;
+        }
+        if (playerHealth == 1.0f)
+        {
+
+            hpImage[2].enabled = false;
+            hpImage[1].enabled = false;
+            hpImage[0].enabled = true;
+        }
+        if (playerHealth == 0.0f)
+        {
+            hpImage[2].enabled = false;
+            hpImage[1].enabled = false;
+            hpImage[0].enabled = false;
+            Debug.Log("You Are Dead");
+            return;
+        }
     }
 
     void FixedUpdate()
@@ -34,5 +70,29 @@ public class Player : MonoBehaviour
 
         transform.Translate(Vector3.right * h * moveSpeed * Time.deltaTime);
         transform.Translate(Vector3.up * v * moveSpeed * Time.deltaTime);
+    }
+
+    IEnumerator MujuckTime()
+    {
+        int countTime = 0;
+
+        while (countTime < 2)
+        {
+            yield return new WaitForSeconds(1.0f);
+            countTime += 1;
+        }
+
+        isMujuck = false;
+        yield return null;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (playerHealth > 0.0f && collision.gameObject.CompareTag("Enemy") && !isMujuck)
+        {
+            playerHealth -= 1;
+            isMujuck = true;
+            StartCoroutine("MujuckTime");
+        }
     }
 }

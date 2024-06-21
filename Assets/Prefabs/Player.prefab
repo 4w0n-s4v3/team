@@ -845,6 +845,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  playerHealth: 3
+  hpImage: []
+  isMujuck: 0
 --- !u!50 &2957780943108565179
 Rigidbody2D:
   serializedVersion: 4
@@ -853,7 +856,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629298866966880328}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

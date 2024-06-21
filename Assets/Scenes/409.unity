@@ -43298,6 +43298,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6769099994203484, guid: ef7a2e633e04889478f83b08efe5287b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2120828780405152343, guid: ef7a2e633e04889478f83b08efe5287b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.56
@@ -52056,6 +52060,10 @@ PrefabInstance:
     - target: {fileID: 1629298866966880328, guid: c5b2882216b4143548f1708868d46575, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957780943108565179, guid: c5b2882216b4143548f1708868d46575, type: 3}
+      propertyPath: m_BodyType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4262141288256001325, guid: c5b2882216b4143548f1708868d46575, type: 3}
       propertyPath: hpImage

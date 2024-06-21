@@ -30127,7 +30127,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1574972235}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -30156,7 +30156,7 @@ Transform:
   m_GameObject: {fileID: 69091636}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.058, z: -10}
+  m_LocalPosition: {x: 0, y: 0.00999999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31892,7 +31892,7 @@ Transform:
   m_GameObject: {fileID: 611617398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.058, z: -10}
+  m_LocalPosition: {x: 0, y: 0.00999999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37344,8 +37344,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2957780943108565179, guid: c5b2882216b4143548f1708868d46575, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957780943108565179, guid: c5b2882216b4143548f1708868d46575, type: 3}
       propertyPath: m_BodyType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2957780943108565179, guid: c5b2882216b4143548f1708868d46575, type: 3}
       propertyPath: m_Constraints
@@ -38211,16 +38215,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6509420058419936064, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
       propertyPath: m_TagString
+      value: Render
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868547759049977405, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7868547759049977405, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8263044165506969744, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6509420058419936064, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1801350511}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
+--- !u!224 &1574972235 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1965035631580434451, guid: c5b2882216b4143548f1708868d46575, type: 3}
+  m_PrefabInstance: {fileID: 1086984626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1587949955
 GameObject:
   m_ObjectHideFlags: 0
@@ -38336,46 +38354,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688708140}
   m_CullTransparentMesh: 1
---- !u!1 &1801350504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6509420058419936064, guid: d99e0c516565ca146b7f244c80e2c4ec, type: 3}
-  m_PrefabInstance: {fileID: 1536130371}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1801350511
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801350504}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &1837026851
 GameObject:
   m_ObjectHideFlags: 0

@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
         yield return null;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (playerHealth > 0.0f && collision.gameObject.CompareTag("Enemy") && !isMujuck)
         {

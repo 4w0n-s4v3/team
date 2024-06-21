@@ -21,12 +21,12 @@ public class IngredientInteraction : MonoBehaviour
         }
     }
 
-    void GetItem()
+    public void GetItem()
     {
         item.count += 1;
         itemName = item.potionIngredient.ingredientName;
         Debug.Log(itemName + " " + item.count);
-        
+
         item.gameObject.SetActive(false);
     }
 
@@ -38,6 +38,10 @@ public class IngredientInteraction : MonoBehaviour
 
             item = collision.gameObject.GetComponent<IngredientPickUp>();
         }
-        else isGetItem = false;
+        else
+        {
+            item = null;
+            isGetItem = false;
+        }
     }
 }

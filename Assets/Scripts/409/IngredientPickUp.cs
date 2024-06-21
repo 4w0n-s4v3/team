@@ -8,6 +8,8 @@ public class IngredientPickUp : MonoBehaviour
     public PotionIngredient potionIngredient;
     public SpriteRenderer spriteRenderer;
 
+    public int count = 0;
+
 #if UNITY_EDITOR
     public void OnValidate()
     {

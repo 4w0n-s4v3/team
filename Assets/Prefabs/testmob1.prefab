@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7868547759049977405}
   m_Layer: 0
   m_Name: testmob1
-  m_TagString: Untagged
+  m_TagString: Render
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 6048372004357950189}
   m_Layer: 0
   m_Name: isTrigger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -7,12 +7,12 @@ public class Slot : MonoBehaviour
 {
     public Image itemImage;
 
-    public enum SlotType { Armor, Boots, Gloves, Ring, Necklace, Inventory, ArmorShop, Equip, Item }
-    public SlotType slotType;
+    // public enum SlotType { Armor, Boots, Gloves, Ring, Necklace, Inventory, ArmorShop, Equip, Item }
+    // public SlotType slotType;
 
-    Item _item;
+    IngredientPickUp _item;
 
-    public Item item
+    public IngredientPickUp item
     {
         get { return _item; }
         set
@@ -31,7 +31,7 @@ public class Slot : MonoBehaviour
 
     virtual public void EnableItem()
     {
-        //itemImage.sprite = _item.icon;
+        itemImage.sprite = _item.potionIngredient.ingredientImage;
         itemImage.color = new Color(1, 1, 1, 1);
     }
 

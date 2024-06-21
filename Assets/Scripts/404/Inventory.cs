@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
 
     [Header("# Base Parameter")]
     public GameObject selectSlot;
-    public List<Item> items;
+    public List<IngredientPickUp> items;
 
     public Text itemName;
     public Text itemDesc;
@@ -82,12 +82,12 @@ public class Inventory : MonoBehaviour
 
     virtual public void TextPrint()
     {
-        Item slotItem = slots[currentSlot].item;
+        IngredientPickUp slotItem = slots[currentSlot].item;
 
-        itemName.text = slotItem.itemName;
+        itemName.text = slotItem.potionIngredient.ingredientName;
     }
 
-    virtual public void FreshSlot(List<Item> items = null, Slot[] slots = null)
+    virtual public void FreshSlot(List<IngredientPickUp> items = null, Slot[] slots = null)
     {
         if (items == null) items = this.items;
         if (slots == null) slots = this.slots;
@@ -105,7 +105,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddItem(Item _item, List<Item> items = null)
+    public void AddItem(IngredientPickUp _item, List<IngredientPickUp> items = null)
     {
         if (items == null) items = this.items;
 

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08061590a7fd694c9ccde0f71b66ac1, type: 3}
   m_Name: potion09
   m_EditorClassIdentifier: 
-  potionName: "\uBC88\uAC1C \uD3EC\uC158"
-  potionImage: {fileID: 21300000, guid: 8bc3f9854ba814b76916015a7dea770f, type: 3}
+  potionName: "\uD3ED\uBC1C \uD3EC\uC158"
+  potionImage: {fileID: 21300000, guid: a3e4623aa62194db099f2e4612c58be5, type: 3}
   potionPrefab: {fileID: 7128564765836178510, guid: d6cb4b1ae978627418b5221eaafd9434, type: 3}
   potionDescription: 
   potionFlavor: 

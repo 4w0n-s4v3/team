@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3415707775650140319}
+  - component: {fileID: -1777646753629033986}
   - component: {fileID: 2409692763579767476}
-  - component: {fileID: 3234019018059364586}
-  - component: {fileID: -4991755404410530556}
+  - component: {fileID: -3416754731195330546}
   m_Layer: 0
   m_Name: potion02
-  m_TagString: Untagged
+  m_TagString: PotionIngredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,22 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2409692763579767476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7128564765836178510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2015a4167fd3d284fbcd287a8205006f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potion: {fileID: 11400000, guid: 7b5718226b29b984d96a849538617edd, type: 2}
-  spriteRenderer: {fileID: 3234019018059364586}
-  count: 0
---- !u!212 &3234019018059364586
+--- !u!212 &-1777646753629033986
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,18 +75,33 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 5b34b41ffdc6e4959aba12506642a659, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ba7c75ccb7f44a3f852a87e5f316078, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6666667, y: 0.6666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-4991755404410530556
+--- !u!114 &2409692763579767476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7128564765836178510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2015a4167fd3d284fbcd287a8205006f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potion: {fileID: 11400000, guid: d8c046811ea83db45b8caa2e2b3a0522, type: 2}
+  spriteRenderer: {fileID: -1777646753629033986}
+  count: 0
+--- !u!60 &-3416754731195330546
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,18 +138,18 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.6666667, y: 0.6666667}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.6666667, y: 0.6666667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.083333336, y: 0.33333334}
-      - {x: -0.33333334, y: -0.041666668}
+    - - {x: 0.20833334, y: 0.33333334}
+      - {x: -0.20833334, y: 0.33333334}
+      - {x: -0.33333334, y: 0.125}
       - {x: -0.33333334, y: -0.33333334}
-      - {x: -0.083333336, y: -0.33333334}
-      - {x: 0.33333334, y: 0.083333336}
-      - {x: 0.33333334, y: 0.25}
-      - {x: 0.25, y: 0.33333334}
+      - {x: 0.33333334, y: -0.33333334}
+      - {x: 0.33333334, y: 0.041666668}
+      - {x: 0.25, y: 0.2916667}
   m_UseDelaunayMesh: 0

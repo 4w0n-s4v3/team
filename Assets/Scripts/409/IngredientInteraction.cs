@@ -33,7 +33,7 @@ public class IngredientInteraction : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("PotionIngredient"))
-        {
+        {   
             isGetItem = true;
 
             item = collision.gameObject.GetComponent<IngredientPickUp>();

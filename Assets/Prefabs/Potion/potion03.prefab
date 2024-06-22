@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3415707775650140319}
   - component: {fileID: 2409692763579767476}
   - component: {fileID: 3234019018059364586}
-  - component: {fileID: -4544701867227533066}
+  - component: {fileID: -4991755404410530556}
   m_Layer: 0
   m_Name: potion03
-  m_TagString: Untagged
+  m_TagString: PotionIngredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2015a4167fd3d284fbcd287a8205006f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potion: {fileID: 11400000, guid: dc52d0dc990f98b459e2bf692571c14d, type: 2}
+  potion: {fileID: 11400000, guid: 7b5718226b29b984d96a849538617edd, type: 2}
   spriteRenderer: {fileID: 3234019018059364586}
   count: 0
 --- !u!212 &3234019018059364586
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: fd7c43aa5aa05487489dd0e0ce049ece, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b34b41ffdc6e4959aba12506642a659, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &-4544701867227533066
+--- !u!60 &-4991755404410530556
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,10 +145,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.16666667, y: 0.33333334}
-      - {x: -0.33333334, y: 0.083333336}
+    - - {x: -0.083333336, y: 0.33333334}
+      - {x: -0.33333334, y: -0.041666668}
       - {x: -0.33333334, y: -0.33333334}
-      - {x: 0.33333334, y: -0.33333334}
-      - {x: 0.33333334, y: 0.16666667}
-      - {x: 0.20833334, y: 0.33333334}
+      - {x: -0.083333336, y: -0.33333334}
+      - {x: 0.33333334, y: 0.083333336}
+      - {x: 0.33333334, y: 0.25}
+      - {x: 0.25, y: 0.33333334}
   m_UseDelaunayMesh: 0

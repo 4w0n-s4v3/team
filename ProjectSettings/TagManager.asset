@@ -8,6 +8,8 @@ TagManager:
   - bullet
   - PotionIngredient
   - Render
+  - npcText
+  - Canvas
   layers:
   - Default
   - TransparentFX

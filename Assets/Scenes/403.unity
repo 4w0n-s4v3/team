@@ -32241,6 +32241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 895943349}
+  isTyping: 0
 --- !u!1001 &688810863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41792,6 +41793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74af49e24637fb479ad906774d39c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 634702038}
+  dialog: {fileID: 634702040}
 --- !u!50 &2027128251
 Rigidbody2D:
   serializedVersion: 4

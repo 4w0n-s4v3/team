@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class npcTalk : MonoBehaviour
 {
-    public GameObject panel;
     public DialogController dialog;
     // GameObject target;
 
@@ -42,9 +41,9 @@ public class npcTalk : MonoBehaviour
     void PrintTalk()
     {
         // 채팅창 꺼져 있을 때 (gameObject 활성화 상태 확인: activeSelf(bool))
-        if (!panel.activeSelf)
+        if (!dialog.gameObject.activeSelf)
         {
-            panel.SetActive(true);
+            dialog.gameObject.SetActive(true);
 
             data = transform.GetComponent<QuestManager>().talkData;
             for (int i = 0; i < data.Count; i++) {
@@ -57,7 +56,7 @@ public class npcTalk : MonoBehaviour
         if (talkIndex == data.Count)
         {
             talkIndex = 0;
-            panel.SetActive(false);
+            dialog.gameObject.SetActive(false);
 
             return;
         }

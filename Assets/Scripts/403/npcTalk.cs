@@ -5,8 +5,14 @@ using UnityEngine.UI;
 
 public class npcTalk : MonoBehaviour
 {
-    GameObject PrintText;
-    GameObject target;
+    public GameObject panel;
+    public DialogController dialog;
+    // GameObject target;
+
+    List<string> data;
+    bool isTalk = false;
+    int talkIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +23,11 @@ public class npcTalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // NPC 상호작용 범위 이내에 있음 && 타이핑 중이 아님 && 엔터 누름
+        if (isTalk && !dialog.isTyping && Input.GetKeyDown(KeyCode.Return))
+        {
+            PrintTalk();
+        }
     }
 
     // void OnTriggerEnter2D(Collider other) {
@@ -29,23 +39,43 @@ public class npcTalk : MonoBehaviour
     //     }
     // }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.CompareTag("Player")) {
-            Debug.Log(GameObject.FindWithTag("Canvas").transform.Find("Talk").gameObject);
-            GameObject panel = GameObject.FindWithTag("Canvas").transform.Find("Talk").gameObject;
-            if (panel == null) return;
-            panel.SetActive(true); //여기까지는 대체로 작동함
+    void PrintTalk()
+    {
+        // 채팅창 꺼져 있을 때 (gameObject 활성화 상태 확인: activeSelf(bool))
+        if (!panel.activeSelf)
+        {
+            panel.SetActive(true);
 
-            //이게문제임
-            List<string> data = this.GetComponent<QuestManager>().talkData;
+            data = transform.GetComponent<QuestManager>().talkData;
             for (int i = 0; i < data.Count; i++) {
                 Debug.Log(data[i]);
-                // panel.transform.Find("Text").gameObject.GetComponent<Text>().text = data[i];
-                // if (Input.GetMouseButton(0)) {
-
-                // }
             }
         }
+
+        // index 형식으로 엔터 한 번 칠 때마다 +1
+        // 끝까지 다 출력한 상태에서 엔터 누르면 대화창 종료
+        if (talkIndex == data.Count)
+        {
+            talkIndex = 0;
+            panel.SetActive(false);
+
+            return;
+        }
+
+        dialog.StartCoroutine(dialog.Typing(data[talkIndex]));
+
+        talkIndex++;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        //Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("Player")) {
+            isTalk = true;
+        }
+        else isTalk = false;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Player")) isTalk = false;
     }
 }

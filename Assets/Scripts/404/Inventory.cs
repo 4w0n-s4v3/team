@@ -16,8 +16,8 @@ public class Inventory : MonoBehaviour
     public GameObject selectSlot;
     public List<IngredientPickUp> items;
 
+    public GameObject itemNameBox;
     public Text itemName;
-    public Text itemDesc;
 
     public int slotLength;
 
@@ -95,21 +95,23 @@ public class Inventory : MonoBehaviour
             scrollRect.verticalScrollbar.value -= 0.5f;
         selectSlot.transform.position = slots[currentSlot].transform.position;
 
-        TextPrint();
+        if (slots[currentSlot].item)
+        {
+            itemNameBox.SetActive(true);
+            TextPrint();
+        }
+        else itemNameBox.SetActive(false);
     }
 
     virtual public void TextPrint()
     {
         IngredientPickUp slotItem = slots[currentSlot].item;
 
-//        itemName.text = slotItem.potionIngredient.ingredientName;
+        itemName.text = slotItem.potionIngredient.ingredientName;
     }
 
-    virtual public void FreshSlot(List<IngredientPickUp> items = null, Slot[] slots = null)
+    virtual public void FreshSlot()
     {
-        if (items == null) items = this.items;
-        if (slots == null) slots = this.slots;
-
        // items = items.OrderByDescending(x => x.id / 10).ThenBy(x => x.id % 10).ThenByDescending(x => x.level).ToList();
 
         int i = 0;
@@ -123,10 +125,8 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddItem(IngredientPickUp _item, List<IngredientPickUp> items = null)
+    public void AddItem(IngredientPickUp _item)
     {
-        if (items == null) items = this.items;
-
         if (items.Count < slots.Length)
         {
             items.Add(_item);

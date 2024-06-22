@@ -27,6 +27,7 @@ public class IngredientInteraction : MonoBehaviour
         itemName = item.potionIngredient.ingredientName;
         Debug.Log(itemName + " " + item.count);
 
+        GameManager.instance.inventory.AddItem(item);
         item.gameObject.SetActive(false);
     }
 
@@ -40,7 +41,6 @@ public class IngredientInteraction : MonoBehaviour
         }
         else
         {
-            item = null;
             isGetItem = false;
         }
     }

@@ -132,9 +132,18 @@ public class Inventory : MonoBehaviour
     public void AddItem(IngredientPickUp _item)
     {
         Debug.Log("Add");
+
+        if (items.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient) != null)
+        {
+            items.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient).count++;
+
+            return;
+        }
+
         if (items.Count < slots.Length)
         {
             items.Add(_item);
+            _item.count++;
             FreshSlot();
         }
         else

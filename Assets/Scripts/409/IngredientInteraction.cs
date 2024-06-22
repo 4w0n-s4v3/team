@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class IngredientInteraction : MonoBehaviour
 {
@@ -24,9 +24,7 @@ public class IngredientInteraction : MonoBehaviour
 
     public void GetItem()
     {
-        item.count += 1;
         itemName = item.potionIngredient.ingredientName;
-        Debug.Log(itemName + " " + item.count);
 
         inventory.AddItem(item);
         item.gameObject.SetActive(false);

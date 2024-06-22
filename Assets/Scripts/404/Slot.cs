@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     public Image itemImage;
+    public Text countText;
 
     // public enum SlotType { Armor, Boots, Gloves, Ring, Necklace, Inventory, ArmorShop, Equip, Item }
     // public SlotType slotType;
@@ -33,6 +34,7 @@ public class Slot : MonoBehaviour
     {
         itemImage.sprite = _item.potionIngredient.ingredientImage;
         itemImage.color = new Color(1, 1, 1, 1);
+        countText.text = _item.count.ToString();
     }
 
     virtual public void DisableItem()

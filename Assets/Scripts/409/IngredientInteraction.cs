@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class IngredientInteraction : MonoBehaviour
 {
     public IngredientPickUp item;
+    public Inventory inventory;
     public string itemName = "";
 
     bool isGetItem = false;
@@ -27,7 +28,7 @@ public class IngredientInteraction : MonoBehaviour
         itemName = item.potionIngredient.ingredientName;
         Debug.Log(itemName + " " + item.count);
 
-        GameManager.instance.inventory.AddItem(item);
+        inventory.AddItem(item);
         item.gameObject.SetActive(false);
     }
 

@@ -41,10 +41,13 @@ public class Inventory : MonoBehaviour
     virtual public void Awake()
     {
         FreshSlot();
+        SelectItem();
     }
 
     virtual public void OnEnable()
     {
+        Debug.Log("Enable");
+        scrollRect.verticalScrollbar.value = 1.0f;
         selectSlot.transform.position = slots[currentSlot].transform.position;
         currentSlot = 0;
         FreshSlot();
@@ -93,6 +96,7 @@ public class Inventory : MonoBehaviour
             scrollRect.verticalScrollbar.value += 0.5f;
         else if (slots[currentSlot].transform.position.y < downScroll.position.y)
             scrollRect.verticalScrollbar.value -= 0.5f;
+
         selectSlot.transform.position = slots[currentSlot].transform.position;
 
         if (slots[currentSlot].item)
@@ -127,6 +131,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(IngredientPickUp _item)
     {
+        Debug.Log("Add");
         if (items.Count < slots.Length)
         {
             items.Add(_item);

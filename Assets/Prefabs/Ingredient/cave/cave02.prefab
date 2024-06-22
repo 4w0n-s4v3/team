@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1384639860854135285}
   - component: {fileID: -7538837469194836455}
   - component: {fileID: 8160873878301529953}
-  - component: {fileID: 2403767874626699820}
+  - component: {fileID: 6715367814104823326}
   m_Layer: 0
   m_Name: cave02
   m_TagString: PotionIngredient
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionIngredient: {fileID: 11400000, guid: 61bf183e09d9b1647a5047c4524735d3, type: 2}
   spriteRenderer: {fileID: -7538837469194836455}
---- !u!60 &2403767874626699820
+  count: 0
+--- !u!60 &6715367814104823326
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +145,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0.20833334, y: 0.33333334}
+      - {x: -0.20833334, y: 0.33333334}
+      - {x: -0.33333334, y: 0.20833334}
+      - {x: -0.33333334, y: -0.125}
+      - {x: -0.16666667, y: -0.33333334}
+      - {x: 0.2916667, y: -0.33333334}
+      - {x: 0.33333334, y: -0.2916667}
+      - {x: 0.33333334, y: 0.25}
   m_UseDelaunayMesh: 0

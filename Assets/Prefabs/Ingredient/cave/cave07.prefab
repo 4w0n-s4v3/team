@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1384639860854135285}
   - component: {fileID: -7538837469194836455}
   - component: {fileID: 8160873878301529953}
-  - component: {fileID: 2403767874626699820}
+  - component: {fileID: 3787715320710881620}
   m_Layer: 0
   m_Name: cave07
   m_TagString: PotionIngredient
@@ -100,7 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potionIngredient: {fileID: 11400000, guid: 186cbf0a47131e849b1edeb2aeb5578f, type: 2}
   spriteRenderer: {fileID: -7538837469194836455}
---- !u!60 &2403767874626699820
+  count: 0
+--- !u!60 &3787715320710881620
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +145,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: -0.33333334, y: 0.33333334}
+      - {x: -0.33333334, y: -0.083333336}
+      - {x: -0.125, y: -0.33333334}
+      - {x: 0.25, y: -0.33333334}
+      - {x: 0.33333334, y: -0.25}
+      - {x: 0.33333334, y: 0.25}
+      - {x: 0.20833334, y: 0.33333334}
   m_UseDelaunayMesh: 0

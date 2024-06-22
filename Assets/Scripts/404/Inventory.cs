@@ -7,14 +7,13 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public enum Set { Select, Deselect, Buy }
-
     [Header("# UI Controller")]
     public UIControl uiControl;
 
     [Header("# Base Parameter")]
     public GameObject selectSlot;
-    public List<IngredientPickUp> items;
+    public List<IngredientPickUp> ingredientItems;
+    public List<PotionPickUp> potionItems;
 
     public GameObject itemNameBox;
     public Text itemName;
@@ -99,7 +98,7 @@ public class Inventory : MonoBehaviour
 
         selectSlot.transform.position = slots[currentSlot].transform.position;
 
-        if (slots[currentSlot].item)
+        if (slots[currentSlot].potion || slots[currentSlot].ingredient)
         {
             itemNameBox.SetActive(true);
             TextPrint();
@@ -109,9 +108,18 @@ public class Inventory : MonoBehaviour
 
     virtual public void TextPrint()
     {
-        IngredientPickUp slotItem = slots[currentSlot].item;
+        if (!slots[currentSlot].potion)
+        {
+            IngredientPickUp slotItem = slots[currentSlot].ingredient;
 
-        itemName.text = slotItem.potionIngredient.ingredientName;
+            itemName.text = slotItem.potionIngredient.ingredientName;
+        }
+        else
+        {
+            PotionPickUp slotItem = slots[currentSlot].potion;
+
+            itemName.text = slotItem.potion.potionName;
+        }
     }
 
     virtual public void FreshSlot()
@@ -119,13 +127,18 @@ public class Inventory : MonoBehaviour
        // items = items.OrderByDescending(x => x.id / 10).ThenBy(x => x.id % 10).ThenByDescending(x => x.level).ToList();
 
         int i = 0;
-        for (; i < items.Count && i < slots.Length; i++)
+        for (; i < potionItems.Count && i < slots.Length; i++)
         {
-            slots[i].item = items[i];
+            slots[i].potion = potionItems[i];
+        }
+        for (; i < ingredientItems.Count && i < slots.Length; i++)
+        {
+            slots[i].ingredient = ingredientItems[i];
         }
         for (; i < slots.Length; i++)
         {
-            slots[i].item = null;
+            slots[i].potion = null;
+            slots[i].ingredient = null;
         }
     }
 
@@ -133,16 +146,39 @@ public class Inventory : MonoBehaviour
     {
         Debug.Log("Add");
 
-        if (items.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient) != null)
+        if (ingredientItems.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient) != null)
         {
-            items.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient).count++;
+            ingredientItems.FirstOrDefault(x => x.potionIngredient == _item.potionIngredient).count++;
 
             return;
         }
 
-        if (items.Count < slots.Length)
+        if (ingredientItems.Count < slots.Length)
         {
-            items.Add(_item);
+            ingredientItems.Add(_item);
+            _item.count++;
+            FreshSlot();
+        }
+        else
+        {
+            Debug.Log("슬롯이 가득 차 있습니다.");
+        }
+    }
+
+    public void AddItem(PotionPickUp _item)
+    {
+        Debug.Log("Add");
+
+        if (potionItems.FirstOrDefault(x => x.potion == _item.potion) != null)
+        {
+            potionItems.FirstOrDefault(x => x.potion == _item.potion).count++;
+
+            return;
+        }
+
+        if (potionItems.Count < slots.Length)
+        {
+            potionItems.Add(_item);
             _item.count++;
             FreshSlot();
         }

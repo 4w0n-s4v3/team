@@ -41699,6 +41699,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questId: 0
   talkData: []
+  images:
+  - {fileID: 21300000, guid: 2ee244675c0604f2eb0a1fd36944dc1c, type: 3}
+  - {fileID: 21300000, guid: b9e44b5ca5f494daa88fb02d980aaa7d, type: 3}
+  - {fileID: 21300000, guid: ffca4e85bdf7545da855a5752298377c, type: 3}
+  - {fileID: 21300000, guid: 68144bb97dd2e4210990696e56e9e3d3, type: 3}
+  - {fileID: 21300000, guid: 127255a59ceeb4992b3ddc7d7a58747f, type: 3}
+  - {fileID: 21300000, guid: 874a0537b00824ad18abfeca2680f8ca, type: 3}
+  - {fileID: 21300000, guid: 8ba7c75ccb7f44a3f852a87e5f316078, type: 3}
+  - {fileID: 21300000, guid: 6e5069bdb1a0040efa1f21fe67330c48, type: 3}
+  - {fileID: 21300000, guid: 3cf43cd0bbf094f62a317265e88d3ede, type: 3}
+  - {fileID: 21300000, guid: d02bbd3d38c32492683d3f8d9601ba20, type: 3}
+  - {fileID: 21300000, guid: 5b34b41ffdc6e4959aba12506642a659, type: 3}
+  - {fileID: 21300000, guid: a0ad88503b86e4d4cb46a524b9c6dac6, type: 3}
+  - {fileID: 21300000, guid: 51351bfd18ce64bc78def49cf44dde56, type: 3}
 --- !u!212 &2027128248
 SpriteRenderer:
   m_ObjectHideFlags: 0

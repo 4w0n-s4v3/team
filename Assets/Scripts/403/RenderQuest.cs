@@ -26,11 +26,14 @@ public class RenderQuest : MonoBehaviour
 
     void UpdateQuest() {
         GameObject text = transform.GetChild(1).gameObject;
+        GameObject image = transform.GetChild(0).gameObject;
         questlist = tst.GetComponent<QuestManager>().questList;
+        Sprite[] imgData = tst.GetComponent<QuestManager>().images;
         //Debug.Log(questlist);
         //Debug.Log(questlist[Questnum]);
         //Debug.Log(questlist[Questnum].Count);
         //Debug.Log(text);
         text.GetComponent<Text>().text = "x" + questlist[Questnum].Count;
+        image.GetComponent<Image>().sprite = imgData[Questnum];
     }
 }

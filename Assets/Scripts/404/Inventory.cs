@@ -40,7 +40,6 @@ public class Inventory : MonoBehaviour
     virtual public void Awake()
     {
         FreshSlot();
-        SelectItem();
     }
 
     virtual public void OnEnable()
@@ -50,7 +49,6 @@ public class Inventory : MonoBehaviour
         selectSlot.transform.position = slots[currentSlot].transform.position;
         currentSlot = 0;
         FreshSlot();
-        SelectItem();
     }
 
     virtual public void Update()
@@ -87,16 +85,18 @@ public class Inventory : MonoBehaviour
                 SelectItem();
             }
         }
+
+        SelectItem();
     }
 
     virtual public void SelectItem()
     {
+        selectSlot.transform.position = slots[currentSlot].transform.position;
+
         if (slots[currentSlot].transform.position.y > upScroll.position.y)
             scrollRect.verticalScrollbar.value += 0.5f;
         else if (slots[currentSlot].transform.position.y < downScroll.position.y)
             scrollRect.verticalScrollbar.value -= 0.5f;
-
-        selectSlot.transform.position = slots[currentSlot].transform.position;
 
         if (slots[currentSlot].potion || slots[currentSlot].ingredient)
         {

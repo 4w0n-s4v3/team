@@ -10,7 +10,6 @@ public class BugNet : MonoBehaviour
 
     private Transform tr;
     public Transform playerPos;
-    public GameObject player;
     Quaternion from = Quaternion.Euler(new Vector3(0, 0, 0));
     Quaternion to = Quaternion.Euler(new Vector3(0, 0, 140));
 

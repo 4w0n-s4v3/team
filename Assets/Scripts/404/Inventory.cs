@@ -126,6 +126,23 @@ public class Inventory : MonoBehaviour
     {
        // items = items.OrderByDescending(x => x.id / 10).ThenBy(x => x.id % 10).ThenByDescending(x => x.level).ToList();
 
+       for (int k = potionItems.Count - 1; k >= 0; k--)
+        {
+            if (potionItems[k].count <= 0)
+            {
+                potionItems[k].count = 0;
+                potionItems.RemoveAt(k);
+            }
+        }
+        for (int k = ingredientItems.Count - 1; k >= 0; k--)
+        {
+            if (ingredientItems[k].count <= 0)
+            {
+                ingredientItems[k].count = 0;
+                ingredientItems.RemoveAt(k);
+            }
+        }
+
         int i = 0;
         for (; i < potionItems.Count && i < slots.Length; i++)
         {

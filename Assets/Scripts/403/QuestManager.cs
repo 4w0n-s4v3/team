@@ -14,16 +14,7 @@ public class QuestManager : MonoBehaviour
 
     void Start()
     {
-        talkData.Clear();
-        talkData.Add("오늘 주문은..");
-        questId = 0;
-        questList = new Dictionary<int, QuestData>();
-        int questCount = Random.Range(5, 8);
-        for (int i = 0; i < questCount; i++) {
-            QuestAdd();
-        }
-
-        talkData.Add("이 정도네요!");
+        NewQuest();
     }
 
 
@@ -36,6 +27,20 @@ public class QuestManager : MonoBehaviour
                 QuestAdd();
             }
         }
+    }
+
+    void NewQuest()
+    {
+        talkData.Clear();
+        talkData.Add("오늘 주문은...");
+        questId = 0;
+        questList = new Dictionary<int, QuestData>();
+        int questCount = Random.Range(5, 8);
+        for (int i = 0; i < questCount; i++) {
+            QuestAdd();
+        }
+
+        talkData.Add("이 정도네요!");
     }
 
     void QuestAdd() {

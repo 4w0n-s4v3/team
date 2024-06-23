@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     bool isMujuck = false;
 
+    public int gold = 0;
+
 
     void Start()
     {

@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class UIControl : MonoBehaviour
 {
     public RectTransform inventory;
+    public RectTransform questlist;
 
     bool isMove = true;
     public bool isInv = false;
+    public bool isQue = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,10 @@ public class UIControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && isMove)
         {
             StartCoroutine(MoveFromTo());
+        }
+        if (Input.GetKeyDown(KeyCode.Q) && isMove)
+        {
+            StartCoroutine(MoveFromTo2());
         }
     }
 
@@ -56,6 +62,36 @@ public class UIControl : MonoBehaviour
         if (isInv) inventory.gameObject.SetActive(false);
 
         isInv = !isInv;
+        isMove = true;
+    }
+
+    IEnumerator MoveFromTo2()
+    {
+        if (!isQue)
+        {
+            questlist.gameObject.SetActive(true);
+
+            Time.timeScale = 0;
+        }
+        else Time.timeScale = 1;
+
+        isMove = false;
+
+        float t = 0f;
+        Vector3 movePosition;
+    
+        if (!isQue) movePosition = new Vector3(questlist.localPosition.x, 0.0f);
+        else movePosition = new Vector3(questlist.localPosition.x, -1100.0f);
+
+        while (t < 1f)
+        {
+            t += 1f * Time.unscaledDeltaTime;
+            questlist.localPosition = Vector3.Lerp(questlist.localPosition, movePosition, t);
+            yield return null;
+        }
+        if (isQue) questlist.gameObject.SetActive(false);
+
+        isQue = !isQue;
         isMove = true;
     }
 }

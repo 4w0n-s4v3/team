@@ -640,7 +640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: a216c7793a66ac34896732b5ba4e02ac, type: 3}
       propertyPath: m_Name
-      value: potion09
+      value: potion08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20559,7 +20559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: 6e973ca14a8fc924eb0381828f41aed4, type: 3}
       propertyPath: m_Name
-      value: potion02
+      value: potion03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21926,7 +21926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: bad6e307792d37c4c89235bab21f4bdd, type: 3}
       propertyPath: m_Name
-      value: potion12
+      value: potion13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24968,7 +24968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: 900ca7de59474644b94a518347b8deaf, type: 3}
       propertyPath: m_Name
-      value: potion05
+      value: potion06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -49925,7 +49925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: b6d9da54855d2c742b009f959ddc633b, type: 3}
       propertyPath: m_Name
-      value: potion03
+      value: potion04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59300,7 +59300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: dc6c34a9f7f2b0742b120d1dcf2a9c98, type: 3}
       propertyPath: m_Name
-      value: potion11
+      value: potion12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59921,7 +59921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7128564765836178510, guid: d6cb4b1ae978627418b5221eaafd9434, type: 3}
       propertyPath: m_Name
-      value: potion04
+      value: potion05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,6 +9,12 @@ public class GameManager : MonoBehaviour
     [Header("# Game Object")]
     public Player player;
     public Inventory inventory;
+    public QuestManager questManager;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

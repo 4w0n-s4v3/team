@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckButton : MonoBehaviour
 {
-    public int Questnum;
+    RenderQuestList quest;
     Dictionary<int, QuestData> questlist;
-    GameObject tst;
+
+    Button checkButton;
 
     public Inventory inv;
     public Player player;
@@ -17,13 +19,22 @@ public class CheckButton : MonoBehaviour
     int reward;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        tst = GameObject.Find("npc");
+        checkButton = gameObject.GetComponentInChildren<Button>();
+        quest = gameObject.GetComponent<RenderQuestList>();
     }
 
     private void OnEnable() {
-        QuestRefresh();
+        questlist = GameManager.instance.questManager.questList;
+
+        if (questlist.ContainsKey(quest.Questnum) && !questlist[quest.Questnum].Clear)
+        {
+            checkButton.gameObject.SetActive(true);
+            QuestRefresh();
+        }
+        else
+            checkButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,12 +46,12 @@ public class CheckButton : MonoBehaviour
     void QuestRefresh()
     {
         //여기에 퀘스트 정보 받아오는 코드 입력
-        questlist = tst.GetComponent<QuestManager>().questList;
+        questlist = GameManager.instance.questManager.questList;
 
         // 변수는 이 함수 내에서만 계속 값 바꿔가면서 쓸 게 아니면 밖에다가 선언해놓고 쓰기
-        potid = questlist[Questnum].PotionId;
-        count = questlist[Questnum].Count;
-        reward = questlist[Questnum].Cost;
+        potid = questlist[quest.Questnum].PotionId;
+        count = questlist[quest.Questnum].Count;
+        reward = questlist[quest.Questnum].Cost;
     }
 
     public void ClickButton()
@@ -57,7 +68,9 @@ public class CheckButton : MonoBehaviour
         {
             questPotion.count -= count;
             player.gold += reward;
-            tst.GetComponent<QuestManager>().questList.Remove(Questnum);
+            GameManager.instance.questManager.questList[quest.Questnum].Clear = true;
+            checkButton.gameObject.SetActive(false);
         }
+        else Debug.Log("퀘스트 완수에 필요한 아이템이 부족합니다. id: " + potid);
     }
 }

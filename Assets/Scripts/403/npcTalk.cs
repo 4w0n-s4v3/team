@@ -45,7 +45,7 @@ public class npcTalk : MonoBehaviour
         {
             dialog.gameObject.SetActive(true);
 
-            data = transform.GetComponent<QuestManager>().talkData;
+            data = GameManager.instance.questManager.talkData;
             for (int i = 0; i < data.Count; i++) {
                 Debug.Log(data[i]);
             }

@@ -8,10 +8,8 @@ public class RenderQuest : MonoBehaviour
     // Start is called before the first frame update
     public int Questnum;
     Dictionary<int, QuestData> questlist;
-    GameObject tst;
     void Start()
     {
-        tst = GameObject.Find("npc");
         //Debug.Log(tst.GetComponent<QuestManager>().questList);
     }
 
@@ -27,8 +25,8 @@ public class RenderQuest : MonoBehaviour
     void UpdateQuest() {
         GameObject text = transform.GetChild(1).gameObject;
         GameObject image = transform.GetChild(0).gameObject;
-        questlist = tst.GetComponent<QuestManager>().questList;
-        Sprite[] imgData = tst.GetComponent<QuestManager>().images;
+        questlist = GameManager.instance.questManager.questList;
+        Sprite[] imgData = GameManager.instance.questManager.images;
         //Debug.Log(questlist);
         //Debug.Log(questlist[Questnum]);
         //Debug.Log(questlist[Questnum].Count);

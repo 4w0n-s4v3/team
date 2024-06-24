@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2015a4167fd3d284fbcd287a8205006f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potion: {fileID: 11400000, guid: 7a0048cde90fc014d80c97956564bbff, type: 2}
+  potion: {fileID: 11400000, guid: 028b1aaedd9363b48a532b9ff4eaf42d, type: 2}
   spriteRenderer: {fileID: 3234019018059364586}
   count: 0
 --- !u!212 &3234019018059364586

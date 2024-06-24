@@ -8,6 +8,8 @@ public class Slot : MonoBehaviour
     public Image itemImage;
     public Text countText;
 
+    public bool isNoCount;
+
     // public enum SlotType { Armor, Boots, Gloves, Ring, Necklace, Inventory, ArmorShop, Equip, Item }
     // public SlotType slotType;
 
@@ -55,12 +57,12 @@ public class Slot : MonoBehaviour
         if (isPotion)
         {
             itemImage.sprite = _potion.potion.potionImage;
-            countText.text = _potion.count.ToString();
+            if (!isNoCount) countText.text = _potion.count.ToString();
         }
         else
         {
             itemImage.sprite = _ingredient.potionIngredient.ingredientImage;
-            countText.text = _ingredient.count.ToString();
+            if (!isNoCount) countText.text = _ingredient.count.ToString();
         }
 
         itemImage.color = new Color(1, 1, 1, 1);

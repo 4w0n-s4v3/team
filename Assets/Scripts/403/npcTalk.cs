@@ -66,7 +66,7 @@ public class npcTalk : MonoBehaviour
         talkIndex++;
     }
 
-    private void OnTriggerStay2D(Collider2D collision) {
+    private void OnCollisionStay2D(Collision2D collision) {
         //Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Player")) {
             isTalk = true;
@@ -74,7 +74,7 @@ public class npcTalk : MonoBehaviour
         else isTalk = false;
     }
 
-    private void OnTriggerExit2D(Collider2D collision) {
+    private void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player")) isTalk = false;
     }
 }

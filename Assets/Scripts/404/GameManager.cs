@@ -11,9 +11,16 @@ public class GameManager : MonoBehaviour
     public Inventory inventory;
     public QuestManager questManager;
 
+    public bool isUII = false;
+
     private void Awake()
     {
         instance = this;
+    }
+
+    private void OnEnable() {
+        player = FindObjectOfType<Player>();
+        inventory = FindObjectOfType<Inventory>();
     }
 
     // Start is called before the first frame update

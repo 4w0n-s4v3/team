@@ -30,6 +30,7 @@ public class ClickPoint : MonoBehaviour
             {
                 ui.SetActive(true);
                 Time.timeScale = 0;
+                GameManager.instance.isUII = true;
             }
             else
             {

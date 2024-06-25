@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ public class UIControl : MonoBehaviour
 {
     public RectTransform inventory;
     public RectTransform questlist;
+    
+    public Text goldText;
 
     bool isMove = true;
     public bool isInv = false;
@@ -21,13 +24,18 @@ public class UIControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && isMove)
+        if (!GameManager.instance.isUII)
         {
-            StartCoroutine(MoveFromTo());
-        }
-        if (Input.GetKeyDown(KeyCode.Q) && isMove)
-        {
-            StartCoroutine(MoveFromTo2());
+            if (Input.GetKeyDown(KeyCode.I) && isMove)
+            {
+                StartCoroutine(MoveFromTo());
+            }
+            if (Input.GetKeyDown(KeyCode.Q) && isMove)
+            {
+                StartCoroutine(MoveFromTo2());
+            }
+    
+            goldText.text = GameManager.instance.player.gold.ToString();
         }
     }
 

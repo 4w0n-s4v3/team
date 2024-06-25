@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     bool isMujuck = false;
 
+    public Transform pivot;
     public int gold = 0;
 
 

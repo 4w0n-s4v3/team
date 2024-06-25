@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
 
     [Header("# Base Parameter")]
     public GameObject selectSlot;
+    public GameObject itemObjects;
     public List<IngredientPickUp> ingredientItems;
     public List<PotionPickUp> potionItems;
 
@@ -47,6 +48,7 @@ public class Inventory : MonoBehaviour
         Debug.Log("Enable");
         scrollRect.verticalScrollbar.value = 1.0f;
         selectSlot.transform.position = slots[currentSlot].transform.position;
+        ingredientItems = itemObjects.GetComponentsInChildren<IngredientPickUp>().ToList();
         currentSlot = 0;
         FreshSlot();
     }
@@ -172,8 +174,9 @@ public class Inventory : MonoBehaviour
 
         if (ingredientItems.Count < slots.Length)
         {
-            ingredientItems.Add(_item);
-            _item.count++;
+            IngredientPickUp instantiateItem = Instantiate(_item.gameObject, itemObjects.transform).gameObject.GetComponent<IngredientPickUp>();
+            ingredientItems.Add(instantiateItem);
+            instantiateItem.count++;
             FreshSlot();
         }
         else

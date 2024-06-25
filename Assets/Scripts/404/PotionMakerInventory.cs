@@ -144,6 +144,8 @@ public class PotionMakerInventory : MonoBehaviour
 
             transform.gameObject.SetActive(false);
             Time.timeScale = 1;
+
+            GameManager.instance.isUII = false;
         }
 
         SelectItem();
@@ -152,13 +154,25 @@ public class PotionMakerInventory : MonoBehaviour
     virtual public void SelectItem()
     {
         selectSlot.transform.position = slots[currentSlot].transform.position;
+
+        if (slots[currentSlot].ingredient)
+        {
+            itemNameBox.SetActive(true);
+            TextPrint();
+        }
+        else itemNameBox.SetActive(false);
+    }
+
+    virtual public void TextPrint()
+    {
+        IngredientPickUp slotItem = slots[currentSlot].ingredient;
+
+        itemName.text = slotItem.potionIngredient.ingredientName;
     }
 
     virtual public void FreshSlot()
     {
        // items = items.OrderByDescending(x => x.id / 10).ThenBy(x => x.id % 10).ThenByDescending(x => x.level).ToList();
-
-       ingredientItems = inv.ingredientItems;
 
         for (int k = ingredientItems.Count - 1; k >= 0; k--)
         {
